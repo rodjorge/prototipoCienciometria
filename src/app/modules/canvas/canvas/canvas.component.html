@@ -1,0 +1,8 @@
+<div class="botonera">
+    <button (click)="mostrarArticulos()"> Articulos </button>
+    <button (click)="mostrarInstituciones()"> Instituciones </button>
+</div>
+<app-main></app-main>
+
+<app-instituciones [cy]="cy" *ngIf="loaded && mostrar === 'Instituciones'"></app-instituciones>
+<app-articulos [cy]="cy" *ngIf="loaded && mostrar === 'Articulos'"></app-articulos>

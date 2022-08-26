@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 #cy {
-    width: 300px;
-    height: 300px;
+    width: 1000px;
+    height: 1000px;
     display: block;
+    border: 1px solid black;
   }

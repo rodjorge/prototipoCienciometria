@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CanvasModule } from './modules/canvas/canvas.module';
 import { MainFrameModule } from './modules/main-frame/main-frame.module';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { MainFrameModule } from './modules/main-frame/main-frame.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainFrameModule
+    MainFrameModule,
+    CanvasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
