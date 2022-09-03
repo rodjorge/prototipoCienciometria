@@ -28,14 +28,10 @@ export class CanvasComponent implements OnInit, AfterViewInit {
     }
   }
 
-  public mostrarArticulos(){
+  public cambiarVista(nombreVista: string){
+    if(nombreVista === this.mostrar) return;
     this.reset();
-    this.mostrar = "Articulos"
-  }
-
-  public mostrarInstituciones(){
-    this.reset();
-    this.mostrar = "Instituciones"
+    this.mostrar = nombreVista;
   }
 
   private reset(){

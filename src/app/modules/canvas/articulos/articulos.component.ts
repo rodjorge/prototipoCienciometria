@@ -74,7 +74,18 @@ export class ArticulosComponent implements OnInit {
   
       this.cy.add(nodes);
       this.cy.add(edges); 
-      this.cy.layout({name:'random'}).run();
+      this.cy.layout({
+        name:'concentric', 
+        fit: true, 
+        padding: 30, 
+        startAngle: 3/2 * Math.PI, 
+        clockwise: true, 
+        equidistant: true,
+        minNodeSpacing: 150,
+        avoidOverlap: true,
+        nodeDimensionsIncludeLabels: false,
+        animate: false
+      }).run();
     }
 
     this.cy.on('tap', '.articulo', onTapInstitucion)
